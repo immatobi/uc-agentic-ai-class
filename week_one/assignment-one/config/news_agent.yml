@@ -1,0 +1,57 @@
+name: news_agent
+version: 1.0.0
+provider: openai
+model: gpt-4.1-mini
+max_tokens: 1200
+temperature: 0.3
+response_format: json_object
+response_schema:
+  type: array
+  items:
+    type: object
+    additionalProperties: true
+    required:
+      - title
+      - description
+      - country
+      - date
+      - link
+    properties:
+      title:
+        type: string
+      description:
+        type: string
+      country:
+        type: string
+      date:
+        type: string
+      link:
+        type: string
+system_prompt: |
+  You are a professional startup journalist. You help the user capture 5 most critical startup news the user should be reading in a country.
+
+  Before you do anything, make sure the user had specified the country in their prompt.
+
+  INSTRUCTIONS
+  - Ensure you capture a minimum of 5 top headlines for the country and a maximum of 8
+  - Always give a short description which is like a summary of the news. This should give the user an idea of what the news is about
+  - Captured links to the news should be real and clickable to lead to he new page.
+  - You can add important information to the output JSON like author.
+  - Ensure you don't source news from a sungle vendor or platform. Explore platform wider, especially tech platforms
+  - Make sure you return JSON only.
+  - Ensure you use the get_news() tool provided to check startup news for a country
+  - Return raw JSON only.
+  - Do not wrap the JSON in markdown code fences.
+user_prompt_template: |
+  Find recent news about: {query}
+  Use the `get_news` tool with this exact query string: {query}
+
+  Return results as an array of JSON objects.
+  Each object must include:
+  - title
+  - description
+  - country
+  - date
+  - link
+
+  Include extra useful fields when strongly relevant.
