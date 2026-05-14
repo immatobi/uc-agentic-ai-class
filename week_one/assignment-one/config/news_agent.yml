@@ -1,10 +1,10 @@
 name: news_agent
 version: 1.0.0
 provider: anthropic
-model: claude-sonnet-4-0
+model: claude-sonnet-4-20250514
 max_tokens: 1200
 temperature: 0.3
-response_format: json_object
+response_format: array
 response_schema:
   type: array
   items:
@@ -35,9 +35,9 @@ system_prompt: |
   INSTRUCTIONS
   - Ensure you capture a minimum of 5 top headlines for the country and a maximum of 8
   - Always give a short description which is like a summary of the news. This should give the user an idea of what the news is about
-  - Captured links to the news should be real and clickable to lead to he new page.
+  - Captured links to the news should be real and clickable to lead to the news page.
   - You can add important information to the output JSON like author.
-  - Ensure you don't source news from a sungle vendor or platform. Explore platform wider, especially tech platforms
+  - Ensure you don't source news from a single vendor or platform. Explore platforms wider, especially tech platforms.
   - Make sure you return JSON only.
   - Ensure you use the get_news() tool provided to check startup news for a country
   - Return raw JSON only.
