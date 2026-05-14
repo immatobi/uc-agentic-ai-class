@@ -72,7 +72,7 @@ def build_agent():
     #     max_tokens=config.get("max_tokens"),
     # )
     model = ChatAnthropic(
-        model="claude-sonnet-4-0",
+        model=config["model"],
         temperature=config.get("temperature", 0.0),
         max_tokens=config.get("max_tokens"),
     )
