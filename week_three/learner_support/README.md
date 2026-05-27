@@ -381,6 +381,3 @@ Then run the notebook cells in order. The notebook includes:
 - graph visualization with `draw_mermaid_png()`
 - a sample invocation with formatted output
 
-## Current Notes
-
-There is one implementation detail worth revisiting in the sample input: the initial `status` in the runnable example is set to `"new"`, while the state type is defined around `received`, `escalated`, and `triaged`. The graph overwrites the status early, so the script still works, but this is worth normalizing if you want stricter type consistency.
