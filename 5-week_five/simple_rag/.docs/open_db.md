@@ -1,0 +1,1 @@
+open -a "DB Browser for SQLite" chroma_db/chroma.sqlite3
