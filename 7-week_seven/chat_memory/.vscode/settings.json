@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "/Users/immanuel/Documents/Learning/unlimited-code/agentic_ai_class/6-week_six/rag_agent/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": [
+    "/Users/immanuel/Documents/Learning/unlimited-code/agentic_ai_class/6-week_six/rag_agent/src"
+  ],
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.indexing": true
+}
