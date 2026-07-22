@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "8a327d15-84df-4f08-9e3f-8de5f31c4d2f",
+    "name": "Northstar CSA API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54535598"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Check Health",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/v1/health",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v1",
+                "health"
+              ]
+            },
+            "description": "**Description**\n\nReturns the versioned health status payload for the Northstar CSA API service. This endpoint is currently implemented as a POST route and returns the static service name, API version, and OK status used to confirm that the backend router is reachable.\n\n**Path Params**\n\n| Param | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |\n\n**Query Params**\n\n| Param | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |\n\n**Body Params**\n\n| Field | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |"
+          },
+          "response": []
+        },
+        {
+          "name": "Version Health",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/v1",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v1"
+              ]
+            },
+            "description": "**Description**\n\nReturns the version root payload for the Northstar CSA API. This endpoint is currently implemented as a POST route and provides the same standard envelope used by the health route, including the API name, version, service status, message, and numeric status code.\n\n**Path Params**\n\n| Param | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |\n\n**Query Params**\n\n| Param | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |\n\n**Body Params**\n\n| Field | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Chat",
+      "item": [
+        {
+          "name": "Create Chat",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{URL}}/v1/chat",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "v1",
+                "chat"
+              ]
+            },
+            "description": "**Description**\n\nCalls the current Northstar CSA chat endpoint. The route is presently implemented as a POST endpoint with no request body parameters and returns the same standard service status envelope as the health endpoints. This collection documents the current route surface only; future chat request fields should be added here when the backend introduces a chat schema.\n\n**Path Params**\n\n| Param | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |\n\n**Query Params**\n\n| Param | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |\n\n**Body Params**\n\n| Field | Type | Required | Description | Example |\n| --- | --- | --- | --- | --- |\n| N/A | - | - | - | - |"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

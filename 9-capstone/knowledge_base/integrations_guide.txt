@@ -1,0 +1,81 @@
+Title: Northstar CRM Integrations Guide
+Last updated: 2026-07-08
+Owner: Integrations Support
+
+Northstar CRM supports selected integrations for email, calendar activity, web forms, CSV imports, and third-party automation platforms. Integrations help customers reduce manual data entry and keep sales activity visible in the CRM.
+
+Supported email integrations:
+
+- Google Workspace Gmail.
+- Microsoft 365 Outlook.
+
+Email sync features:
+
+- Log sent and received emails on matching contact timelines.
+- Track email subject, sender, recipient, timestamp, and message body when sync permissions allow.
+- Create contacts from email recipients when the user enables contact creation.
+- Exclude private domains and specific email addresses from sync.
+
+Connecting Gmail:
+
+1. Go to Settings > Integrations.
+2. Select Google Workspace.
+3. Choose "Connect account."
+4. Sign in with the Google account used for sales email.
+5. Review the permissions screen.
+6. Approve access.
+7. Choose sync preferences:
+   - Log emails for existing contacts only.
+   - Create new contacts from email recipients.
+   - Exclude personal domains.
+8. Save settings.
+
+Connecting Microsoft 365:
+
+1. Go to Settings > Integrations.
+2. Select Microsoft 365.
+3. Choose "Connect account."
+4. Sign in with the Microsoft account used for sales email.
+5. Approve the requested permissions.
+6. Choose sync preferences.
+7. Save settings.
+
+Email sync delays:
+
+- Initial sync can take 10 to 30 minutes depending on mailbox size.
+- New messages usually appear within five minutes.
+- If messages do not appear after 30 minutes, reconnect the integration and check sync filters.
+
+Calendar activity:
+
+- Calendar activity can be logged when the connected email provider grants calendar permissions.
+- Northstar CRM does not create meetings directly from CRM records in the Starter plan.
+- Pro and Business customers can associate meetings with contacts and deals.
+
+Web forms:
+
+- Web forms can create contacts from lead capture pages.
+- Forms can map fields to standard and custom contact fields.
+- Form submissions appear on contact timelines.
+- Duplicate detection may suggest merging if the email already exists.
+
+Third-party automation:
+
+- Business plan customers can use webhook-based workflows for supported events.
+- Webhook payloads include record ID, event type, timestamp, and changed fields.
+- Webhooks should be tested in a sandbox workspace before production use.
+
+Integration troubleshooting:
+
+- If an integration disconnects, the user should reconnect from Settings > Integrations.
+- If email sync logs too many personal messages, update excluded domains and sync rules.
+- If a connected account belongs to a former employee, an Admin should disconnect it from Settings > Team or Settings > Integrations.
+- If the customer sees an OAuth permission error, ask them to confirm that their Google or Microsoft admin allows third-party app access.
+
+Escalation triggers:
+
+- OAuth approval fails for all users in the workspace.
+- Sync duplicates large numbers of records.
+- Connected email belongs to a former employee and cannot be removed.
+- Customer reports private messages appearing where they should not.
+- Integration outage affects a time-sensitive sales workflow.

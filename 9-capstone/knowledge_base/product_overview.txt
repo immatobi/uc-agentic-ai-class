@@ -1,0 +1,52 @@
+Title: Northstar CRM Product Overview
+Last updated: 2026-07-08
+Owner: Product Support
+
+Northstar CRM is a customer relationship management platform for small businesses that need a simple way to manage contacts, deals, tasks, email activity, and sales follow-up. It is designed for teams that are moving from spreadsheets or lightweight contact tools into a shared sales workspace.
+
+Core modules:
+
+1. Contacts
+Contacts store people and companies. Each contact can include name, email, phone, company, title, lifecycle stage, owner, tags, notes, and custom fields. Contacts can be created manually, imported from CSV, captured through web forms, or synced from connected email accounts.
+
+2. Companies
+Companies group related contacts under one organization. A company record can include website, industry, company size, account owner, open deals, notes, and related activity.
+
+3. Deals and pipelines
+Deals represent sales opportunities. Each deal belongs to a pipeline and has a stage, value, close date, probability, owner, and associated contact or company. Northstar CRM includes a default sales pipeline with the stages New Lead, Qualified, Demo Scheduled, Proposal Sent, Negotiation, Won, and Lost. Admins can customize pipeline names and stages on Pro and Business plans.
+
+4. Tasks and reminders
+Users can create tasks for follow-up calls, emails, demos, contract reviews, and customer check-ins. Tasks can be assigned to team members and connected to contacts, companies, or deals. Reminder notifications are sent in-app and by email when enabled.
+
+5. Email activity
+Northstar CRM can connect to Google Workspace and Microsoft 365 email accounts. When email sync is enabled, sent and received messages related to CRM contacts can appear on contact timelines. Private email sync settings allow users to exclude personal messages and domains.
+
+6. Notes and timelines
+Every contact, company, and deal has an activity timeline. The timeline can show notes, emails, calls, meetings, task completions, form submissions, imports, ownership changes, and pipeline movements.
+
+7. Reports
+Northstar CRM includes basic reporting for pipeline value, deal stage conversion, sales activity, won and lost deals, and team performance. Pro and Business plans include custom report filters and saved dashboards.
+
+Common customer questions:
+
+- "How do I import contacts from a spreadsheet?"
+- "How do I see all deals closing this month?"
+- "Can each sales rep have their own pipeline?"
+- "Can I connect Gmail or Outlook?"
+- "How do I create a follow-up task after a demo?"
+- "Can I track duplicate contacts?"
+
+Product limitations:
+
+- Northstar CRM is not an accounting system and does not replace invoicing software.
+- Northstar CRM does not send bulk marketing emails. It can log one-to-one sales email activity and integrate with supported marketing tools.
+- Northstar CRM does not provide built-in payment processing.
+- Northstar CRM does not automatically delete suspected duplicate contacts. It suggests potential duplicates and lets users merge them manually.
+- Northstar CRM does not support custom code plugins in customer workspaces.
+
+Recommended answer behavior:
+
+- For product capability questions, answer directly from the relevant product documentation and cite the document title.
+- If a customer asks whether a feature exists and the knowledge base does not mention it, say that the available documentation does not confirm the feature.
+- If a customer asks for a workflow, provide ordered steps.
+- If a customer reports data loss, unauthorized access, billing problems, or a time-sensitive outage, route to escalation instead of only giving general guidance.

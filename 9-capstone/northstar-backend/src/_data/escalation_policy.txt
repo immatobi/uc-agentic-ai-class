@@ -1,0 +1,132 @@
+Title: Northstar CRM Escalation Policy
+Last updated: 2026-07-08
+Owner: Support Leadership
+
+The support assistant should escalate when automation is not enough, when the customer reports a high-risk issue, or when a policy requires human review. Escalation means creating or recommending a support ticket with a priority, assigned team, summary, and requested information.
+
+Priority levels:
+
+P1 - Critical:
+- Security incident or suspected unauthorized access.
+- Complete workspace outage for multiple users.
+- Multiple users cannot log in.
+- Data loss, accidental bulk deletion, or corrupted records.
+- Time-sensitive business event blocked within the next two hours, such as a live sales demo or customer launch.
+
+P2 - High:
+- One user blocked from essential work with no workaround.
+- Billing dispute or suspected duplicate charge.
+- Email sync failure affecting a team.
+- Import problem affecting more than 10,000 records.
+- SSO configuration issue affecting a department.
+
+P3 - Normal:
+- Feature behavior question requiring account review.
+- Non-urgent integration issue.
+- Report mismatch that does not block work.
+- User permission question.
+- Import issue affecting a small data set with a clear workaround.
+
+P4 - Low:
+- How-to question.
+- Product clarification.
+- Enhancement request.
+- Minor visual issue.
+
+Assignment teams:
+
+Billing Support:
+- Duplicate charge.
+- Refund request.
+- Invoice dispute.
+- Failed payment.
+- Billing contact change.
+- Plan downgrade impact.
+
+Technical Support:
+- Login failures.
+- Broken integrations.
+- Import errors.
+- Duplicate records.
+- Slow performance.
+- Data visibility issues.
+
+Security Response:
+- Unauthorized access.
+- Suspicious login.
+- Former employee access concern.
+- Unexpected password reset.
+- Private email exposure.
+- Audit log review.
+
+Customer Success:
+- Onboarding plan.
+- Migration from spreadsheets.
+- Workflow design.
+- Team training.
+- Configuration best practices.
+
+Product Feedback:
+- Feature request.
+- Missing integration request.
+- Usability feedback.
+- Reporting enhancement request.
+
+Escalation response format:
+
+When escalating, the assistant should include:
+
+- Priority.
+- Assigned team.
+- Short issue summary.
+- Why the issue requires escalation.
+- Immediate safe steps the customer can take.
+- Information to include in the support ticket.
+
+Information to collect:
+
+Login issue:
+- Affected user email.
+- Workspace name.
+- Error message.
+- Whether other users are affected.
+- Whether SSO is enabled.
+- Deadline or business impact.
+
+Billing issue:
+- Billing email.
+- Invoice number if available.
+- Approximate charge date.
+- Last four digits of payment card only.
+- Whether the charge appears once or multiple times.
+
+Security issue:
+- Workspace name.
+- Suspicious user or event.
+- Approximate date and time.
+- Whether the customer still has admin access.
+- Whether any former employees should be removed.
+
+Import issue:
+- Import file name.
+- Approximate row count.
+- Import job timestamp.
+- Mapping used.
+- Number of failed or duplicated records.
+
+Do not collect:
+
+- Passwords.
+- One-time codes.
+- Full credit card numbers.
+- CVV.
+- Bank account numbers.
+- API secrets.
+- Private keys.
+
+Escalation rules:
+
+- If the issue is both urgent and security-related, use P1 and assign Security Response.
+- If the issue is billing-related, assign Billing Support even if the customer asks for technical help.
+- If the issue is an onboarding or migration planning request, assign Customer Success only when the customer requests human help; otherwise provide a plan.
+- If confidence is low or the knowledge base is insufficient for a policy-sensitive answer, escalate instead of guessing.

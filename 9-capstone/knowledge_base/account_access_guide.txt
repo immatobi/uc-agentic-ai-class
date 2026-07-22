@@ -1,0 +1,92 @@
+Title: Northstar CRM Account Access Guide
+Last updated: 2026-07-08
+Owner: Support Operations
+
+This guide covers login, password reset, invitations, roles, permissions, and account access troubleshooting.
+
+Supported login methods:
+
+- Email and password.
+- Google sign-in when enabled for the workspace.
+- Microsoft sign-in when enabled for the workspace.
+- SSO for Business plan customers that have completed SSO setup.
+
+Password reset steps:
+
+1. Go to the Northstar CRM login page.
+2. Select "Forgot password?"
+3. Enter the email address used for the CRM account.
+4. Check the inbox for the reset email.
+5. Open the reset link within 30 minutes.
+6. Create a new password with at least 12 characters.
+7. Sign in again.
+
+If the reset email does not arrive:
+
+- Check spam, junk, and quarantine folders.
+- Confirm the email address is the same one used for Northstar CRM.
+- Ask an admin to verify that the user is still active in Settings > Team.
+- If the company uses SSO, the user may need to sign in through the identity provider instead of resetting a Northstar password.
+
+Invitation troubleshooting:
+
+- Invitations expire after seven days.
+- Admins can resend invitations from Settings > Team.
+- If the invited user receives "invitation already used," the admin should check whether the user account already exists.
+- If the invited user sees the wrong workspace, they may be signed into a different account in the same browser.
+
+Roles:
+
+Admin:
+- Manage billing.
+- Invite and remove users.
+- Manage permissions.
+- Configure pipelines, custom fields, and integrations.
+- Export account data.
+
+Manager:
+- View team reports.
+- Assign records.
+- Manage team dashboards.
+- Edit records according to workspace permissions.
+
+Member:
+- Manage assigned contacts, companies, deals, tasks, and notes.
+- View records allowed by workspace permissions.
+- Connect personal email sync when enabled.
+
+Common access issues:
+
+Issue: User cannot log in before an important meeting.
+Recommended response: Provide immediate password-reset and browser troubleshooting steps, then escalate as high priority if the user states the issue is time-sensitive or affects multiple users.
+
+Issue: User gets "account not found."
+Recommended response: Ask them to confirm the email address and have an admin verify the Team page. If the user was recently invited, suggest resending the invitation.
+
+Issue: User gets "workspace unavailable."
+Recommended response: Check whether this is a billing read-only state or a service issue. If multiple users are affected, escalate to Technical Support.
+
+Issue: User cannot access billing settings.
+Recommended response: Explain that only Admins can access billing settings. If all admins have left the company, escalate to Account Recovery.
+
+Browser troubleshooting:
+
+1. Confirm the user is using the latest version of Chrome, Edge, Safari, or Firefox.
+2. Open Northstar CRM in a private or incognito window.
+3. Disable browser extensions that block cookies or scripts.
+4. Clear cookies for the Northstar CRM domain.
+5. Try a different network if the company firewall blocks sign-in.
+
+Security-sensitive access issues:
+
+Escalate immediately if the customer mentions:
+
+- Unauthorized access.
+- Suspicious login.
+- Unknown admin user.
+- Password reset they did not request.
+- Audit log concerns.
+- SSO misconfiguration locking out all users.
+- Former employee retaining access.
+
+The assistant should never ask for a password, one-time passcode, full recovery code, or identity-provider admin credentials.

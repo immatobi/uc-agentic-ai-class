@@ -1,0 +1,113 @@
+Title: Northstar CRM CSV Import Guide
+Last updated: 2026-07-08
+Owner: Data Migration Support
+
+Customers can import contacts, companies, and deals into Northstar CRM using CSV files. CSV import is commonly used when teams migrate from spreadsheets or another CRM.
+
+Supported file requirements:
+
+- File type must be `.csv`.
+- Recommended maximum file size is 25 MB.
+- Starter plan supports up to 5,000 rows per import.
+- Pro plan supports up to 25,000 rows per import.
+- Business plan supports up to 100,000 rows per import.
+- The first row should contain column headers.
+- Each contact should have at least one identifier: email address, phone number, or external ID.
+- Email is the best unique identifier for contact imports.
+
+Recommended CSV columns for contacts:
+
+- First Name
+- Last Name
+- Email
+- Phone
+- Company Name
+- Job Title
+- Lifecycle Stage
+- Contact Owner
+- Tags
+- Notes
+
+Recommended CSV columns for companies:
+
+- Company Name
+- Website
+- Industry
+- Company Size
+- Account Owner
+- Address
+- Tags
+
+Recommended CSV columns for deals:
+
+- Deal Name
+- Deal Value
+- Pipeline
+- Stage
+- Close Date
+- Associated Contact Email
+- Associated Company Name
+- Deal Owner
+
+Import steps:
+
+1. Go to Settings > Imports.
+2. Select "New import."
+3. Choose the record type: Contacts, Companies, or Deals.
+4. Upload the CSV file.
+5. Map each CSV column to the correct Northstar CRM field.
+6. Review unmapped columns.
+7. Choose duplicate handling:
+   - Skip records that match existing email addresses.
+   - Update existing records when email matches.
+   - Create new records.
+8. Run the preview.
+9. Review sample rows.
+10. Start the import.
+11. Review the import summary when processing is complete.
+
+Duplicate prevention:
+
+- Use email address as the primary match field for contacts.
+- Remove duplicate rows before import.
+- Trim leading and trailing spaces from email addresses.
+- Use consistent casing for emails and domains.
+- Avoid importing the same spreadsheet more than once unless using update mode.
+- Use external ID when migrating from another CRM.
+
+Common import errors:
+
+Invalid email:
+- The email column contains values that are not valid email addresses.
+- Fix the row and re-import failed records only.
+
+Missing required field:
+- The mapped field is required by the workspace configuration.
+- Add the missing value or ask an Admin whether the field should be optional.
+
+Invalid date:
+- Date values should use a consistent format such as YYYY-MM-DD.
+
+Unknown owner:
+- The owner name or email does not match an active Northstar CRM user.
+- Invite the user or map ownership to an existing team member.
+
+Invalid pipeline stage:
+- The imported stage does not exist in the selected pipeline.
+- Create the stage first or update the CSV to match existing stage names.
+
+After import:
+
+- Review skipped and failed rows.
+- Download the error report.
+- Spot-check at least ten imported records.
+- Confirm owners and lifecycle stages.
+- Review duplicate suggestions.
+- Save the original CSV and import summary for audit purposes.
+
+Escalation triggers:
+
+- Import affects more than 10,000 records and mappings are uncertain.
+- Customer accidentally imported the wrong data into production.
+- Customer believes records were deleted or overwritten.
+- Import is blocking a customer launch, live sales demo, or renewal.

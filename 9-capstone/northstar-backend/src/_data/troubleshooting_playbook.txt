@@ -1,0 +1,115 @@
+Title: Northstar CRM Troubleshooting Playbook
+Last updated: 2026-07-08
+Owner: Technical Support
+
+Use this playbook when a customer reports that something is broken, unexpected, slow, duplicated, missing, or inconsistent. The support assistant should provide ordered steps and explain when to escalate.
+
+General troubleshooting approach:
+
+1. Identify the affected feature.
+2. Ask whether the issue affects one user, multiple users, or the entire workspace.
+3. Ask when the issue started.
+4. Ask what the customer expected to happen.
+5. Ask what actually happened.
+6. Check whether the issue is urgent, customer-facing, or blocking revenue activity.
+7. Provide safe troubleshooting steps.
+8. Escalate if the issue involves security, billing, data loss, or a business-critical deadline.
+
+Duplicate contacts after CSV import:
+
+Likely causes:
+
+- The CSV included contacts that already existed in Northstar CRM.
+- The email column was missing, inconsistent, or mapped to the wrong field.
+- Different email casing or whitespace prevented exact matching.
+- Multiple rows used the same phone number but different email addresses.
+- The customer imported separate company and contact spreadsheets without a stable unique identifier.
+
+Recommended steps:
+
+1. Open Contacts > Duplicates.
+2. Filter by "Created by import."
+3. Review suggested duplicate groups.
+4. Merge a small sample manually before bulk merging.
+5. Check the original CSV for duplicate email addresses.
+6. Confirm that the email column was mapped to Email, not Notes or Custom Field.
+7. Re-run the import in preview mode if available.
+8. For future imports, clean whitespace and use one email address per contact.
+
+Do not tell the customer that duplicates can always be removed automatically. Northstar CRM suggests possible duplicates, but customers must review and merge records.
+
+Missing contacts after import:
+
+Likely causes:
+
+- Rows failed validation.
+- Required fields were blank.
+- The import was still processing.
+- The user imported into a filtered view.
+- The user does not have permission to view all imported records.
+
+Recommended steps:
+
+1. Open Settings > Imports.
+2. Find the import job.
+3. Review processed, skipped, and failed row counts.
+4. Download the error report if available.
+5. Clear filters on the Contacts page.
+6. Ask an Admin to confirm record visibility permissions.
+7. Fix validation errors and re-import only failed rows.
+
+Email sync not showing messages:
+
+Recommended steps:
+
+1. Confirm the user connected Gmail or Microsoft 365 from Settings > Integrations.
+2. Confirm sync is enabled for the affected mailbox.
+3. Check whether the contact email exactly matches the email address in the message.
+4. Review excluded domains and private email rules.
+5. Wait up to 30 minutes after initial connection.
+6. Reconnect the integration if sync remains stale.
+7. Escalate if multiple users have the same sync failure.
+
+Slow page loading:
+
+Recommended steps:
+
+1. Try a private or incognito browser window.
+2. Disable browser extensions that modify pages.
+3. Clear browser cache for the Northstar CRM domain.
+4. Test another network.
+5. Check whether the affected view contains a very large report or unfiltered contact list.
+6. Ask whether teammates see the same slowdown.
+7. Escalate if multiple users are blocked or if the slowdown affects a live demo.
+
+Cannot log in:
+
+Recommended steps:
+
+1. Confirm the login email.
+2. Try password reset.
+3. Try a private browser window.
+4. Confirm whether SSO is required.
+5. Ask an Admin to verify that the user is active in Settings > Team.
+6. Escalate if multiple users cannot log in or if the issue is time-sensitive.
+
+Pipeline stage changes not saving:
+
+Recommended steps:
+
+1. Confirm the user has permission to edit the deal.
+2. Refresh the page and retry once.
+3. Check whether the deal is locked by an automation or workflow rule.
+4. Try moving a different deal to confirm whether the issue is record-specific.
+5. Ask an Admin to review pipeline permissions.
+6. Escalate if changes fail across multiple pipelines.
+
+Escalate immediately for:
+
+- Suspected unauthorized access.
+- Duplicate charge or refund request.
+- Data loss or accidental bulk deletion.
+- Multiple users unable to log in.
+- A blocked sales demo, launch, renewal, or customer-facing deadline.
+- Private email messages syncing incorrectly.
+- Import affecting more than 10,000 records with uncertain mapping.

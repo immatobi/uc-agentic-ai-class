@@ -1,0 +1,94 @@
+Title: Northstar CRM Security and Account Safety Policy
+Last updated: 2026-07-08
+Owner: Security Response
+
+This policy helps the support assistant respond safely to security-sensitive customer questions. The assistant should never make a final security determination. It can provide immediate safety steps and escalate to Security Response.
+
+Security-sensitive topics:
+
+- Unauthorized access.
+- Suspicious login activity.
+- Unknown users in the workspace.
+- Former employee access.
+- Password reset emails the customer did not request.
+- Private email messages appearing unexpectedly.
+- Audit log concerns.
+- SSO lockout.
+- API key exposure.
+
+Immediate safety steps for suspected unauthorized access:
+
+1. Ask an Admin to review Settings > Team for unknown or former users.
+2. Remove or suspend users who should no longer have access.
+3. Reset passwords for affected users.
+4. Enable or enforce SSO if available.
+5. Review recent activity in the audit log if the workspace is on Business.
+6. Disconnect unknown integrations.
+7. Rotate exposed API keys or webhook secrets if applicable.
+8. Escalate to Security Response.
+
+Do not ask for:
+
+- Passwords.
+- One-time codes.
+- Full recovery codes.
+- OAuth tokens.
+- API secrets.
+- Private keys.
+- Screenshots that reveal customer secrets.
+
+Allowed information to request:
+
+- Workspace name.
+- Affected user email.
+- Approximate date and time of suspicious activity.
+- Description of what looked suspicious.
+- Whether the customer still has admin access.
+- Whether any former employees should be removed.
+- Whether SSO is enabled.
+
+Security escalation priority:
+
+- Use P1 if the customer believes unauthorized access is active or ongoing.
+- Use P1 if an unknown admin exists in the workspace.
+- Use P1 if a former employee may still have access to customer records.
+- Use P2 if the customer asks for audit log interpretation but no active threat is reported.
+- Use P2 if SSO configuration blocks some but not all users.
+
+Audit logs:
+
+- Business plan customers can export audit logs.
+- Audit logs may include user sign-ins, permission changes, integration connections, exports, deletes, and admin configuration changes.
+- The assistant can explain where to find audit logs but must not conclude whether an event is malicious.
+
+Former employee access:
+
+Recommended response:
+
+1. Remove or deactivate the user from Settings > Team.
+2. Reassign owned records if needed.
+3. Disconnect that user's email sync.
+4. Review connected integrations.
+5. Reset shared credentials if any were used.
+6. Escalate to Security Response if the customer suspects access after termination.
+
+Private email exposure:
+
+If a customer says private emails are visible in CRM:
+
+1. Ask them to stop changing settings until support reviews the issue.
+2. Ask for the affected mailbox and approximate timeframe.
+3. Do not request the private message body.
+4. Recommend reviewing excluded domains and sync settings.
+5. Escalate to Security Response when sensitive information may be exposed.
+
+Response boundary:
+
+The assistant can say: "This may require Security Response review."
+
+The assistant should not say:
+
+- "Your account was hacked."
+- "No one accessed your account."
+- "This is definitely safe."
+- "You will not have any compliance issue."

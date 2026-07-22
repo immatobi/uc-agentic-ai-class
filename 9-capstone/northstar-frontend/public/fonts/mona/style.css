@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'MonaSans-Bold';
+    src: url('MonaSans-Bold.woff2') format('woff2'),
+        url('MonaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-Black';
+    src: url('MonaSans-Black.woff2') format('woff2'),
+        url('MonaSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-ExtraBold';
+    src: url('MonaSans-ExtraBold.woff2') format('woff2'),
+        url('MonaSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-Italic';
+    src: url('MonaSans-Italic.woff2') format('woff2'),
+        url('MonaSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-Light';
+    src: url('MonaSans-Light.woff2') format('woff2'),
+        url('MonaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-ExtraLight';
+    src: url('MonaSans-ExtraLight.woff2') format('woff2'),
+        url('MonaSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-Regular';
+    src: url('MonaSans-Regular.woff2') format('woff2'),
+        url('MonaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-Medium';
+    src: url('MonaSans-Medium.woff2') format('woff2'),
+        url('MonaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaSans-SemiBold';
+    src: url('MonaSans-SemiBold.woff2') format('woff2'),
+        url('MonaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-mona-black, .font-mona-black a, .font-mona-black span{
+    font-family: 'MonaSans-Black';
+}
+
+.font-mona-xbold, .font-mona-xbold a, .font-mona-xbold span{
+    font-family: 'MonaSans-ExtraBold';
+}
+
+.font-mona-bold, .font-mona-bold a, .font-mona-bold span{
+    font-family: 'MonaSans-Bold';
+}
+
+.font-mona-semibold, .font-mona-semibold a, .font-mona-semibold span{
+    font-family: 'MonaSans-SemiBold';
+}
+
+.font-mona-medium, .font-mona-medium a, .font-mona-medium span{
+    font-family: 'MonaSans-Medium';
+}
+
+.font-mona, .font-mona a, .font-mona span{
+    font-family: 'MonaSans-Regular';
+}
+
+.font-imona, .font-imona a, .font-imona span{
+    font-family: 'MonaSans-Italic';
+}
+
+.font-mona-light, .font-mona-light a, .font-mona-light span{
+    font-family: 'MonaSans-Light';
+}
+
+.font-xlight, .font-xlight a, .font-xlight span{
+    font-family: 'MonaSans-ExtraLight';
+}

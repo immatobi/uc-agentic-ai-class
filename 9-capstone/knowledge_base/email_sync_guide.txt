@@ -1,0 +1,78 @@
+Title: Northstar CRM Email Sync Guide
+Last updated: 2026-07-08
+Owner: Email Integrations Support
+
+Northstar CRM email sync helps sales teams see customer email activity on CRM timelines. Email sync is available on Pro and Business plans.
+
+Supported providers:
+
+- Google Workspace Gmail.
+- Microsoft 365 Outlook.
+
+What sync can do:
+
+- Log messages sent to or received from CRM contacts.
+- Add email activity to contact, company, and deal timelines.
+- Create new contacts from email recipients when enabled.
+- Respect excluded domains and private email rules.
+- Show sync status in Settings > Integrations.
+
+What sync does not do:
+
+- It does not send bulk marketing campaigns.
+- It does not guarantee that every historical email will sync.
+- It does not sync emails from unsupported providers.
+- It does not bypass Google or Microsoft admin restrictions.
+- It does not expose emails to users who do not have permission to view the related CRM record.
+
+Setup checklist:
+
+1. Confirm the workspace is on Pro or Business.
+2. Confirm the user has permission to connect email.
+3. Go to Settings > Integrations.
+4. Select Google Workspace or Microsoft 365.
+5. Connect the account.
+6. Approve provider permissions.
+7. Choose whether to sync existing contacts only or create new contacts.
+8. Add excluded domains such as personal email domains or internal-only domains.
+9. Save sync settings.
+10. Wait for initial sync to complete.
+
+Recommended private email exclusions:
+
+- Personal domains used by employees.
+- Legal or HR domains.
+- Internal-only aliases.
+- Vendor addresses that should not appear in sales timelines.
+
+Troubleshooting missing emails:
+
+1. Confirm the contact email matches the email message exactly.
+2. Confirm the message is not excluded by domain rules.
+3. Confirm the user is connected in Settings > Integrations.
+4. Wait up to 30 minutes after initial setup.
+5. Reconnect the provider if sync status shows disconnected.
+6. Ask the Google or Microsoft admin whether third-party app access is blocked.
+
+Troubleshooting duplicate contacts from email sync:
+
+1. Check whether contact auto-creation is enabled.
+2. Review Contacts > Duplicates.
+3. Confirm the same person does not use multiple email aliases.
+4. Merge duplicates manually after reviewing suggested matches.
+5. Disable automatic contact creation if the team prefers manual review.
+
+Security and privacy:
+
+- The assistant must not ask the customer to forward private email content.
+- The assistant should not ask for OAuth tokens or credentials.
+- If private messages appear on CRM timelines unexpectedly, escalate to Security Response or Technical Support depending on severity.
+- If email sync belongs to a former employee, an Admin should disconnect it immediately and review access.
+
+Escalation triggers:
+
+- Private messages synced unexpectedly.
+- Email sync fails for all users.
+- OAuth app approval fails for the whole workspace.
+- Former employee mailbox remains connected.
+- Customer reports missing sales-critical messages before a live event.

@@ -1,0 +1,87 @@
+Title: Northstar CRM Pricing and Billing
+Last updated: 2026-07-08
+Owner: Billing Support
+
+Northstar CRM offers three standard subscription plans: Starter, Pro, and Business. Pricing in this training knowledge base is intentionally realistic but fictional. Students should treat this document as the source of truth for billing answers in the capstone project.
+
+Starter plan:
+
+- Best for solo users and very small teams.
+- Includes contact and company management.
+- Includes one sales pipeline.
+- Includes manual task management and basic reminders.
+- Includes CSV import up to 5,000 rows per import.
+- Includes basic activity timeline.
+- Includes email support with a two-business-day target response.
+- Does not include custom fields, custom dashboards, advanced permissions, or priority support.
+
+Pro plan:
+
+- Best for growing sales teams that need automation and reporting.
+- Includes everything in Starter.
+- Includes up to five customizable sales pipelines.
+- Includes custom fields for contacts, companies, and deals.
+- Includes Google Workspace and Microsoft 365 email sync.
+- Includes saved views and team dashboards.
+- Includes duplicate detection and assisted merge.
+- Includes workflow reminders for follow-up tasks.
+- Includes role-based permissions for Admin, Manager, and Member.
+- Includes email and chat support with a one-business-day target response.
+
+Business plan:
+
+- Best for larger teams with stricter operational requirements.
+- Includes everything in Pro.
+- Includes unlimited customizable pipelines.
+- Includes advanced permissions and team workspaces.
+- Includes audit log export.
+- Includes SSO configuration support.
+- Includes sandbox workspace for testing imports and configuration changes.
+- Includes priority support with a four-business-hour target response.
+- Includes quarterly success review for annual contracts.
+
+Billing cycles:
+
+- Customers can choose monthly or annual billing.
+- Annual billing is charged once per year at the start of the subscription term.
+- Monthly billing renews on the same calendar day each month when possible.
+- Seat changes are prorated for the active billing period.
+- Removing a user stops future charges for that seat but does not automatically delete CRM data owned by that user.
+
+Invoices and receipts:
+
+- Account admins can download invoices from Settings > Billing > Invoices.
+- Billing receipts are emailed to the billing contact after successful payment.
+- If the billing contact changes, past receipts are not automatically resent. An admin can download them from Billing settings.
+
+Failed payments:
+
+- When payment fails, Northstar CRM retries the card automatically.
+- Admins see a billing banner in the workspace.
+- If payment is not resolved within the grace period, the workspace may become read-only.
+- Read-only mode allows viewing and exporting data but blocks new records, imports, and workflow changes.
+
+Refund and duplicate-charge policy:
+
+- The support assistant must not promise a refund or credit.
+- Suspected duplicate charges must be escalated to Billing Support.
+- If a customer says "I was charged twice this month," treat it as a suspected duplicate charge and escalate to Billing Support.
+- The assistant can ask for non-sensitive details such as invoice number, billing email, approximate charge date, and the last four digits of the card.
+- The assistant must not ask for full card number, CVV, full bank account number, or account password.
+- Billing Support investigates duplicate-charge reports and responds according to the customer support plan.
+
+Plan-change guidance:
+
+- Customers can upgrade from Starter to Pro or Business from Settings > Billing > Plan.
+- Downgrades may remove access to features such as custom fields, additional pipelines, advanced reports, or audit exports.
+- Customers should export important reports before downgrading.
+- If a customer asks whether they should downgrade, explain the feature tradeoffs and recommend contacting Billing Support for account-specific pricing.
+
+Escalation triggers:
+
+- Duplicate charge or unexpected charge.
+- Refund request.
+- Invoice dispute.
+- Failed payment on a time-sensitive renewal.
+- Customer cannot access billing settings.
+- Billing contact is no longer with the company.

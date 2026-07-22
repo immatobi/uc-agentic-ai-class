@@ -1,0 +1,107 @@
+Title: Northstar CRM Onboarding Checklist
+Last updated: 2026-07-08
+Owner: Customer Success
+
+This checklist helps new teams adopt Northstar CRM. The assistant can use this document to create onboarding plans for small teams, especially teams migrating from spreadsheets.
+
+Recommended 30-day onboarding plan for a five-person sales team:
+
+Days 1-3: Workspace setup
+
+- Choose one Admin owner for setup decisions.
+- Confirm the plan level: Starter, Pro, or Business.
+- Invite the five team members.
+- Assign roles: one Admin, one Manager, and three Members if appropriate.
+- Configure company name, timezone, currency, and default owner rules.
+- Review basic security settings.
+
+Days 4-7: Data preparation
+
+- Collect existing spreadsheets.
+- Remove duplicate rows.
+- Standardize email addresses.
+- Standardize company names.
+- Confirm required fields.
+- Decide which columns should become custom fields.
+- Identify contacts, companies, and deals that should be imported separately.
+
+Days 8-10: Import pilot
+
+- Import a small sample first, such as 50 contacts.
+- Review field mapping.
+- Check ownership assignments.
+- Review duplicate suggestions.
+- Confirm timelines and notes.
+- Fix CSV errors before importing the full data set.
+
+Days 11-14: Full migration
+
+- Import contacts.
+- Import companies.
+- Import deals.
+- Review import summaries.
+- Download error reports.
+- Re-import failed rows only after fixing issues.
+- Spot-check records with each sales rep.
+
+Days 15-18: Pipeline configuration
+
+- Review default pipeline stages.
+- Rename stages if needed.
+- Add or remove stages to match the team sales process.
+- Set required fields for deal movement only if the team agrees.
+- Create saved views for active deals, stale deals, and upcoming renewals.
+
+Days 19-21: Email and activity setup
+
+- Connect Google Workspace or Microsoft 365 on Pro or Business.
+- Choose sync preferences.
+- Add private domain exclusions.
+- Create follow-up task templates.
+- Confirm email activity appears on test contacts.
+
+Days 22-25: Reporting and team workflow
+
+- Create team dashboard.
+- Review pipeline value report.
+- Create saved views for each rep.
+- Agree on rules for lifecycle stages and deal ownership.
+- Set a weekly CRM review meeting.
+
+Days 26-30: Training and adoption
+
+- Train the team on contact updates, deal movement, tasks, notes, and email sync.
+- Have each rep update ten real records.
+- Review dashboard accuracy.
+- Clean duplicate records.
+- Document the team's CRM operating rules.
+- Schedule a follow-up review after the first month.
+
+Migration from spreadsheets checklist:
+
+1. Identify each spreadsheet and owner.
+2. Decide whether each row represents a contact, company, or deal.
+3. Standardize column names.
+4. Remove blank rows and duplicate headers.
+5. Clean email addresses and phone numbers.
+6. Create a unique ID if emails are missing.
+7. Map spreadsheet columns to Northstar CRM fields.
+8. Create required custom fields before import.
+9. Import a small sample.
+10. Validate results before full import.
+
+Adoption tips:
+
+- Keep the first pipeline simple.
+- Avoid creating too many custom fields on day one.
+- Make ownership rules clear before importing.
+- Train users on the exact fields they are expected to update.
+- Review reports only after data quality is stable.
+
+When to involve Customer Success:
+
+- The customer is migrating more than 25,000 records.
+- The team needs help designing multiple pipelines.
+- The customer wants a training plan for more than ten users.
+- The customer is preparing for a launch or executive reporting deadline.
+- The customer has complex permissions or SSO requirements.

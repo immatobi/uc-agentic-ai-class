@@ -1,0 +1,47 @@
+flowchart TD
+    Start([START]) --> Classify[classify_request<br/>question_router_node]
+
+    Classify --> Route{route_request<br/>decision_router}
+
+    Route -->|general| General[general_answer<br/>general_answer_node]
+
+    Route -->|knowledge| Retrieve[retrieve_documents<br/>retrieve_docs_node]
+    Route -->|troubleshooting| Retrieve
+    Route -->|escalation| Retrieve
+    Route -->|onboarding| Retrieve
+
+    Retrieve --> AfterRetrieve{route_after_retrieval<br/>after_retrieval_router}
+
+    AfterRetrieve -->|knowledge| Knowledge[generate_grounded_answer<br/>knowledge_answer_node]
+    AfterRetrieve -->|troubleshooting| Troubleshoot[generate_troubleshooting_steps<br/>troubleshoot_plan_node]
+    AfterRetrieve -->|escalation| Escalate[prepare_escalation<br/>escalation_node]
+    AfterRetrieve -->|onboarding| Onboarding[generate_onboarding_plan<br/>onboarding_plan_node]
+
+    Knowledge --> Review[review_answer<br/>review_answer_node]
+    Troubleshoot --> Review
+    Escalate --> Review
+    Onboarding --> Review
+    General --> Review
+
+    Review --> ReviewDecision{review_decision<br/>review_router}
+
+    ReviewDecision -->|revise| Revise[revise_answer<br/>revise_node]
+    Revise --> Review
+
+    ReviewDecision -->|finalize| Finalize[finalize_response<br/>finalize_node]
+    Finalize --> SaveMemory[save_memory<br/>save_memory_node]
+    SaveMemory --> End([END])
+
+    classDef startEnd fill:#111827,color:#ffffff,stroke:#111827,stroke-width:1px;
+    classDef router fill:#fef3c7,color:#78350f,stroke:#f59e0b,stroke-width:1px;
+    classDef retrieval fill:#dbeafe,color:#1e3a8a,stroke:#3b82f6,stroke-width:1px;
+    classDef branch fill:#ecfdf5,color:#064e3b,stroke:#10b981,stroke-width:1px;
+    classDef review fill:#fce7f3,color:#831843,stroke:#ec4899,stroke-width:1px;
+    classDef memory fill:#ede9fe,color:#4c1d95,stroke:#8b5cf6,stroke-width:1px;
+
+    class Start,End startEnd;
+    class Route,AfterRetrieve,ReviewDecision router;
+    class Retrieve retrieval;
+    class Knowledge,Troubleshoot,Escalate,Onboarding,General branch;
+    class Review,Revise,Finalize review;
+    class SaveMemory memory;

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    --foreground: #676970;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --font-sans: var(--font-mona-sans);
+    --font-mona: var(--font-mona-sans);
+
+    --font-mona: "MonaSans-Regular";
+    --font-mona-medium: "MonaSans-Medium";
+    --font-mona-semibold: "MonaSans-SemiBold";
+    --font-mona-bold: "MonaSans-Bold";
+    --font-mona-xbold: "MonaSans-ExtraBold";
+    --font-mona-black: "MonaSans-Black";
+    --font-mona-light: "MonaSans-Light";
+    --font-mona-xlight: "MonaSans-ExtraLight";
+    --font-mona-italic: "MonaSans-Italic";
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #ffffff;
+        --foreground: #676970;
+    }
+}
+
+body,
+.body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-mona-sans), Arial, Helvetica, sans-serif;
+
+}
